@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InovaCRM - Caixa</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="caixa">
+  <div class="container">
+    <h1>Confirmação de Dados</h1>
+    <div id="dadosCliente">
+      <p>Nome: <span id="nomeDisplay"></span></p>
+      <p>CPF: <span id="cpfDisplay"></span></p>
+      <p>Celular: <span id="celularDisplay"></span></p>
+      <p>Valor: R$ <span id="valorDisplay"></span></p>
+    </div>
+    <label for="senha">Senha do Caixa:</label>
+    <input type="password" id="senha" required>
+    <button id="confirmarVenda" class="btn-primary">Confirmar</button>
+    <div class="progresso">
+      <p>Meta de Premiação</p>
+      <div class="barra-container">
+        <div class="barra" id="barra"></div>
+      </div>
+    </div>
+  </div>
+  <script src="caixa.js"></script>
+</body>
+</html>

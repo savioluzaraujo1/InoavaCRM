@@ -1,0 +1,136 @@
+/* Corpo da página com fundo azul */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #0056b3; /* Fundo azul */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Evitar overflow na tela */
+  }
+  
+  /* Container principal */
+  .container {
+    width: 100%;
+    max-width: 500px; /* Tamanho máximo do container */
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.5); /* Fundo transparente */
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para contraste */
+    backdrop-filter: blur(10px); /* Efeito de desfoque */
+    box-sizing: border-box; /* Garantir que padding não quebre o layout */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-height: 90vh; /* Evitar que o container ultrapasse a altura da tela */
+  }
+  
+  /* Títulos */
+  h1, h2 {
+    text-align: center;
+    color: #0056b3; /* Azul para títulos */
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  /* Inputs e botões */
+  label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: bold;
+  }
+  
+  input, button {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box; /* Garantir que o padding não cause overflow */
+  }
+  
+  input:focus {
+    outline: none;
+    border-color: #0056b3;
+    box-shadow: 0 0 4px rgba(0, 86, 179, 0.5);
+  }
+  
+  button {
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #003f8a;
+  }
+  
+  /* Barra de progresso */
+  .progresso {
+    margin-top: 20px;
+  }
+  
+  .barra-container {
+    background: #ddd;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-top: 10px;
+    height: 20px;
+  }
+  
+  .barra {
+    background: #0056b3;
+    height: 100%;
+    width: 0;
+    transition: width 0.5s ease-in-out;
+  }
+  
+  /* Estilo da tabela */
+  .table-container {
+    width: 100%;
+    max-height: 300px; /* Ajuste de altura conforme necessário */
+    overflow-y: auto; /* Permitir rolar a tabela se necessário */
+    margin-top: 20px; /* Espaçamento entre a tabela e outros elementos */
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table, th, td {
+    border: 1px solid #ddd;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 12px;
+  }
+  
+  th {
+    background-color: #0056b3;
+    color: white;
+  }
+  
+  /* Responsividade para telas menores */
+  @media (max-width: 600px) {
+    .container {
+      padding: 10px;
+    }
+    
+    table, th, td {
+      font-size: 14px;
+    }
+  }
+  
